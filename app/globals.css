@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom styles */
+:root{
+  --primary: #2677A9;
+  --muted: #f8f9fa;
+}
+
+html, body, #__next {
+  height: 100%;
+}
+
+body {
+  background-color: white;
+}
+
+/* small utility */
+.btn-primary {
+  @apply bg-primary text-white px-4 py-2 rounded-md shadow-sm inline-block;
+}
