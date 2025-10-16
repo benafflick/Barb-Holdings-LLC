@@ -55,7 +55,7 @@ export default function Footer() {
               href="mailto:info@barbholdings.com"
               className="text-[#2677A9] hover:underline transition-colors"
             >
-              info@barbholdings.com
+              info@barbholdllc.com
             </a>
           </p>
         </div>

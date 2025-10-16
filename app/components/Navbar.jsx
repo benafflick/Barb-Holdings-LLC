@@ -65,7 +65,7 @@ export default function Navbar() {
             href="tel:+1234567890"
             className="flex items-center gap-2 bg-[#2677A9] text-white px-4 py-2 rounded-md text-sm shadow hover:bg-[#1f5f87] transition"
           >
-            📞 <span>(123) 456-7890</span>
+            📞 <span>+1 (443) 735-1393</span>
           </a>
         </div>
 
@@ -97,11 +97,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="tel:+1234567890"
+            href="tel:+1 (443) 735-1393"
             onClick={() => setMenuOpen(false)}
             className="mt-2 bg-[#2677A9] text-white px-4 py-2 rounded-md text-center flex items-center justify-center gap-1"
           >
-            📞 (123) 456-7890
+            📞 +1 (443) 735-1393
           </a>
         </nav>
       </div>

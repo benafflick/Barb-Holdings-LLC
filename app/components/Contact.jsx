@@ -40,7 +40,7 @@ export default function Contact() {
             <Phone className="text-[#2677A9]" size={32} />
             <h4 className="mt-4 font-semibold text-gray-900 ">Call Us</h4>
             <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
-              +1 (123) 456-7890 <br /> Mon–Sat, 8:00 AM – 6:00 PM
+              +1 (443) 735-1393 <br /> Mon–Sat, 8:00 AM – 6:00 PM
             </p>
           </div>
 
@@ -49,7 +49,7 @@ export default function Contact() {
             <Mail className="text-[#2677A9]" size={32} />
             <h4 className="mt-4 font-semibold text-gray-900 ">Email</h4>
             <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
-              info@yourproperty.com <br /> support@yourproperty.com
+              info@barbholdllc.com
             </p>
           </div>
 
@@ -66,7 +66,7 @@ export default function Contact() {
         {/* CALL TO ACTION */}
         <div className="mt-16">
           <a
-            href="tel:+2349012345678"
+            href="tel:+14437351393"
             className="inline-block bg-[#2677A9] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#1d5c84] transition-colors duration-300 font-[Inter]"
           >
             Call Us Now
