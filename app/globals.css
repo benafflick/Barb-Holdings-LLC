@@ -2,18 +2,28 @@
 @tailwind components;
 @tailwind utilities;
 
+h1,
+h2,
+h3,
+h4 {
+  font-family: "Poppins";
+}
+
 /* Custom styles */
-:root{
-  --primary: #2677A9;
+:root {
+  --primary: #2677a9;
   --muted: #f8f9fa;
 }
 
-html, body, #__next {
+html,
+body,
+#__next {
   height: 100%;
 }
 
 body {
   background-color: white;
+  font-family: "Inter", sans-serif;
 }
 
 /* small utility */

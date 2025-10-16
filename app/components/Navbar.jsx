@@ -1,6 +1,7 @@
 "use client";
 import { useState, useEffect } from "react";
 import Link from "next/link";
+import Image from "next/image";
 
 export default function Navbar() {
   const [menuOpen, setMenuOpen] = useState(false);
@@ -35,13 +36,17 @@ export default function Navbar() {
           href="/"
           className="flex items-center gap-2 text-[#2677A9] font-bold text-xl"
         >
-          <div className="w-10 h-10 rounded-md bg-[#2677A9] flex items-center justify-center text-white font-bold">
-            PM
+          <div className="relative w-10 h-10">
+            <Image
+              src="/logo.png"
+              alt="Barb Holdings LLC"
+              fill
+              className="object-contain"
+            />
           </div>
-          YourProperty
+          <span className="text-gray-900 font-semibold">Barb Holdings LLC</span>
         </Link>
 
-        {/* Desktop Nav */}
         <nav className="hidden md:flex items-center gap-8 text-gray-700 font-medium">
           {navLinks.map((link) => (
             <a
@@ -55,13 +60,12 @@ export default function Navbar() {
           ))}
         </nav>
 
-        {/* CTA button */}
         <div className="hidden md:block">
           <a
-            href="#contact"
-            className="bg-[#2677A9] text-white px-4 py-2 rounded-md text-sm shadow hover:bg-[#1f5f87] transition"
+            href="tel:+1234567890"
+            className="flex items-center gap-2 bg-[#2677A9] text-white px-4 py-2 rounded-md text-sm shadow hover:bg-[#1f5f87] transition"
           >
-            Get in Touch
+            📞 <span>(123) 456-7890</span>
           </a>
         </div>
 
@@ -93,11 +97,11 @@ export default function Navbar() {
             </a>
           ))}
           <a
-            href="#contact"
+            href="tel:+1234567890"
             onClick={() => setMenuOpen(false)}
-            className="mt-2 bg-[#2677A9] text-white px-4 py-2 rounded-md text-center"
+            className="mt-2 bg-[#2677A9] text-white px-4 py-2 rounded-md text-center flex items-center justify-center gap-1"
           >
-            Get in Touch
+            📞 (123) 456-7890
           </a>
         </nav>
       </div>

@@ -1,45 +1,78 @@
+"use client";
+import { Mail, Phone, MapPin, Clock } from "lucide-react";
+
 export default function Contact() {
   return (
-    <section id="contact" className="bg-muted">
-      <div className="max-w-6xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-semibold text-gray-900">Contact Us</h2>
-        <p className="mt-2 text-gray-600">Reach out for a free consultation — we’ll get back to you within 24 hours.</p>
+    <section id="contact" className="relative bg-[#f9fafb] py-20">
+      {/* BACKGROUND IMAGE */}
+      <div
+        className="absolute inset-0 bg-cover bg-center opacity-10"
+        style={{
+          backgroundImage: "url('/images/contact-bg.jpg')",
+        }}
+      ></div>
 
-        <div className="mt-8 grid grid-cols-1 md:grid-cols-2 gap-6">
-          <div>
-            <form action="https://formspree.io/f/your-form-id" method="POST" className="space-y-4">
-              <div>
-                <label className="block text-sm font-medium text-gray-700">Full name</label>
-                <input name="name" required className="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700">Email</label>
-                <input name="email" type="email" required className="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2" />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-gray-700">Message</label>
-                <textarea name="message" rows="5" required className="mt-1 block w-full border border-gray-200 rounded-md px-3 py-2"></textarea>
-              </div>
-              <div>
-                <button type="submit" className="bg-primary text-white px-5 py-2 rounded-md">Send message</button>
-              </div>
-            </form>
+      {/* OVERLAY */}
+      <div className="relative max-w-6xl mx-auto px-6 text-center">
+        <h2 className="text-3xl md:text-4xl font-bold text-gray-900 ">
+          Get in <span className="text-[#2677A9]">Touch</span>
+        </h2>
+        <p className="mt-3 text-gray-600 max-w-2xl mx-auto font-[Inter]">
+          We’re here to answer your questions and help you manage your property
+          with confidence.
+        </p>
+
+        {/* CONTACT GRID */}
+        <div className="mt-12 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8 text-left">
+          {/* ADDRESS */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+            <MapPin className="text-[#2677A9]" size={32} />
+            <h4 className="mt-4 font-semibold text-gray-900 ">
+              Office Address
+            </h4>
+            <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
+              Address: 122 Cutters Ln, Clinton, TN 37716
+            </p>
           </div>
 
-          <div className="text-sm text-gray-700">
-            <h4 className="font-semibold">Office</h4>
-            <p className="mt-2">123 Main Street<br/>City, State ZIP</p>
-
-            <h4 className="font-semibold mt-6">Contact</h4>
-            <p className="mt-2">Phone: <a href="tel:+1234567890" className="text-primary">+1 (234) 567-890</a></p>
-            <p>Email: <a href="mailto:info@yourproperty.com" className="text-primary">info@yourproperty.com</a></p>
-
-            <div className="mt-6">
-              <p className="text-sm text-gray-500">Tip: Replace the Formspree action URL in the form with your own Formspree form ID or other endpoint.</p>
-            </div>
+          {/* PHONE */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+            <Phone className="text-[#2677A9]" size={32} />
+            <h4 className="mt-4 font-semibold text-gray-900 ">Call Us</h4>
+            <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
+              +1 (123) 456-7890 <br /> Mon–Sat, 8:00 AM – 6:00 PM
+            </p>
           </div>
+
+          {/* EMAIL */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+            <Mail className="text-[#2677A9]" size={32} />
+            <h4 className="mt-4 font-semibold text-gray-900 ">Email</h4>
+            <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
+              info@yourproperty.com <br /> support@yourproperty.com
+            </p>
+          </div>
+
+          {/* HOURS */}
+          <div className="bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition-all duration-300">
+            <Clock className="text-[#2677A9]" size={32} />
+            <h4 className="mt-4 font-semibold text-gray-900 ">Office Hours</h4>
+            <p className="mt-2 text-sm text-gray-600 font-[Inter] leading-relaxed">
+              Monday – Friday <br /> 8:00 AM – 6:00 PM
+            </p>
+          </div>
+        </div>
+
+        {/* CALL TO ACTION */}
+        <div className="mt-16">
+          <a
+            href="tel:+2349012345678"
+            className="inline-block bg-[#2677A9] text-white px-8 py-3 rounded-full text-lg font-semibold hover:bg-[#1d5c84] transition-colors duration-300 font-[Inter]"
+          >
+            Call Us Now
+          </a>
         </div>
       </div>
     </section>
-  )
+  );
 }
