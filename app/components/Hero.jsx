@@ -6,7 +6,7 @@ export default function Hero() {
     <section
       id="home"
       className="relative bg-cover bg-center bg-no-repeat min-h-[90vh] flex items-center"
-      style={{ backgroundImage: "url('/hero.jpg')" }} // Replace with your actual image path
+      style={{ backgroundImage: "url('/hero.jpg')" }} //
     >
       {/* Overlay */}
       <div className="absolute inset-0 bg-black/50"></div>
